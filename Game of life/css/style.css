@@ -1,0 +1,44 @@
+/* CSS for the BBC technical test - game of life */
+/* Developed by Alexander Spencer */
+#info{
+text-align: center;
+font-family: 'Lato', sans-serif;
+
+}
+/* aligns the inputs to the centre of the page */
+#input{
+	display:block;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+
+}
+/* aligns the buttons to the centre of the page */
+#button{
+	display:block;
+	margin-bottom:5px;
+	padding: 5px;
+	clear:right;
+	 text-align: center;
+}
+/* css for the buttons */
+.button{
+	  background-color: #479BFF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+}
+/*CSS to align the canvas created from life.js */
+#defaultCanvas0{
+	   padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

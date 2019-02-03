@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BBC Game of Life Test</title>
+  <!-- meta information -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alexander Spencer">
+  <!-- connection to javascript libaries -->
+  <script src="js/life.js"></script>
+  <!--  <script src="js/life.js"></script> -->
+  <script src="js/p5/p5/p5.min.js"></script>
+  <!-- Connection to styling sheet, favicon and google fonts -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="css/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+ <!-- information about this page. -->
+ <div id="info">
+  <h1>BBC Technical Test - Game of Life</h1>
+  <h2>Developed by Alexander Spencer</h2>
+  <p>Created for the BBC technical test using HTML, CSS, JavaScript and the p5 JavaScript library</p>
+ </div>
+ <!-- inputs for the game of life which is used when creating a new version in life.js -->
+ <div id ="input">
+  Canvas Height<input type="text" id="canH" value="400">
+  Canvas Width<input type="text" id="canW" value="800">
+  Resolution<input type="text" id="resolution" value="10">
+ </div>
+ <!-- buttons that can start, restart and pause the program -->
+ <div id="button">
+  <button type="button" id="start"  class="button" onclick="newest(); setup();"/>New Version</button>
+  <button type="button" id="pause" class="button" onclick="stop();"/>Stop the Game</button>
+  <button type="button" id="resume" class="button" onclick="newest();"/>Resume the game</button>
+ </div>
+ </br>
+<!-- area where the canvas made in life.js is generated -->
+</body>
+</html>
